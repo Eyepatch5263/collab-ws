@@ -16,8 +16,8 @@ const awarenessProtocol = require('y-protocols/awareness');
 const encoding = require('lib0/encoding');
 const decoding = require('lib0/decoding');
 
-const PORT = process.env.WS_PORT || 1234;
-const HOST = process.env.WS_HOST || 'localhost';
+const PORT = process.env.PORT || process.env.WS_PORT || 1234;
+const HOST = process.env.WS_HOST || '0.0.0.0';
 
 // Message types (must match y-websocket client)
 const messageSync = 0;
